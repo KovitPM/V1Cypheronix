@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypheronix - Soluciones Tecnológicas y Ciberseguridad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" sizes="64x64" href="assets/logo.png"> 
+</head>
+<body>
+     Header 
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Cypheronix Logo" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li class="language-selector">
+                        <button class="lang-btn" onclick="toggleLanguage()">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">ES</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+     Hero Section 
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Soluciones Tecnológicas Avanzadas</h1>
+                <p class="hero-subtitle">Protegemos y optimizamos tu negocio con tecnología de vanguardia en ciberseguridad y desarrollo de software</p>
+                <div class="hero-buttons">
+                    <a href="#servicios" class="btn btn-primary">Nuestros Servicios</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="tech-animation">
+                    <div class="circuit-line"></div>
+                    <div class="circuit-line"></div>
+                    <div class="circuit-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Services Section 
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Ciberseguridad</h3>
+                    <p>Protegemos empresas con soluciones avanzadas de ciberseguridad, salvaguardando datos y activos digitales contra amenazas en evolución.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desarrollo de Software</h3>
+                    <p>Diseñamos y construimos software innovador adaptado para satisfacer las necesidades empresariales modernas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Creación y Seguridad de Redes</h3>
+                    <p>Desarrollamos y aseguramos redes confiables para garantizar conectividad perfecta y protección.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Products Section 
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <h3>Auditoría de Seguridad</h3>
+                    <div class="product-price">$2,500</div>
+                    <ul class="product-features">
+                        <li>Análisis completo de vulnerabilidades</li>
+                        <li>Reporte detallado</li>
+                        <li>Recomendaciones de seguridad</li>
+                        <li>Soporte post-auditoría</li>
+                    </ul>
+                    <div class="paypal-button-container">
+                        <button class="paypal-button" onclick="handlePayPalPayment('audit')">
+                            <i class="fab fa-paypal"></i>
+                            Pagar con PayPal
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card featured">
+                    <div class="featured-badge">Más Popular</div>
+                    <h3>Desarrollo de Aplicación Web</h3>
+                    <div class="product-price">$8,500</div>
+                    <ul class="product-features">
+                        <li>Aplicación web personalizada</li>
+                        <li>Diseño responsive</li>
+                        <li>Base de datos incluida</li>
+                        <li>Hosting por 1 año</li>
+                        <li>Mantenimiento 6 meses</li>
+                    </ul>
+                    <div class="paypal-button-container">
+                        <button class="paypal-button" onclick="handlePayPalPayment('webapp')">
+                            <i class="fab fa-paypal"></i>
+                            Pagar con PayPal
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <h3>Configuración de Red Segura</h3>
+                    <div class="product-price">$4,200</div>
+                    <ul class="product-features">
+                        <li>Configuración de firewall</li>
+                        <li>VPN empresarial</li>
+                        <li>Monitoreo 24/7</li>
+                        <li>Capacitación del personal</li>
+                    </ul>
+                    <div class="paypal-button-container">
+                        <button class="paypal-button" onclick="handlePayPalPayment('network')">
+                            <i class="fab fa-paypal"></i>
+                            Pagar con PayPal
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Why Us Section 
+    <section id="nosotros" class="why-us">
+        <div class="container">
+            <h2 class="section-title">¿Por qué nosotros?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Red Amplia</h3>
+                    <p>Te atendemos sin importar dónde te encuentres.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Asistencia Inigualable</h3>
+                    <p>Asistencia virtual. Habla con nosotros y resuelve cualquier duda, 24/7.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friendly"></i>
+                    </div>
+                    <h3>Apto para Principiantes</h3>
+                    <p>Interfaz de usuario simple. Nuestra interfaz es sencilla y fácil de usar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Contact Section 
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@cypheronix.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Tech Street, Digital City</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+     Footer 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/logo2.png" alt="Cypheronix Logo" class="footer-logo">
+                    <p>Soluciones tecnológicas avanzadas y servicios integrales de ciberseguridad.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Ciberseguridad</a></li>
+                        <li><a href="#servicios">Desarrollo de Software</a></li>
+                        <li><a href="#servicios">Seguridad de Redes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cypheronix. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
