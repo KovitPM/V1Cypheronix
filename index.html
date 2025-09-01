@@ -6,10 +6,10 @@
     <title>Cypheronix - Soluciones Tecnológicas y Ciberseguridad</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" sizes="64x64" href="assets/logo.png"> 
+    <link rel="icon" sizes="64x64" href="assets/logo.png">
 </head>
 <body>
-     Header 
+     <!--Header--> 
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
@@ -38,7 +38,7 @@
         </nav>
     </header>
 
-     Hero Section 
+     <!--Hero Section--> 
     <section id="inicio" class="hero">
         <div class="hero-container">
             <div class="hero-content">
@@ -59,7 +59,7 @@
         </div>
     </section>
 
-     Services Section 
+     <!--Services Section-->
     <section id="servicios" class="services">
         <div class="container">
             <h2 class="section-title">Nuestros Servicios</h2>
@@ -89,22 +89,38 @@
         </div>
     </section>
 
-     Products Section 
+     <!--Products Section--> 
     <section id="productos" class="products">
         <div class="container">
             <h2 class="section-title">Nuestros Productos</h2>
             <div class="products-grid">
                 <div class="product-card">
-                    <h3>Auditoría de Seguridad</h3>
-                    <div class="product-price">$2,500</div>
+                    <h3>Plan Gratuito</h3>
+                    <div class="product-price">$0 CAD</div>
                     <ul class="product-features">
-                        <li>Análisis completo de vulnerabilidades</li>
-                        <li>Reporte detallado</li>
-                        <li>Recomendaciones de seguridad</li>
-                        <li>Soporte post-auditoría</li>
+                        <li>Escaneo básico de seguridad</li>
+                        <li>Alertas de vulnerabilidad</li>
+                        <li>Reporte mensual limitado</li>
+                        <li>Soporte comunitario</li>
                     </ul>
                     <div class="paypal-button-container">
-                        <button class="paypal-button" onclick="handlePayPalPayment('audit')">
+                        <button class="btn btn-outline" onclick="handlePayPalPayment('free')">
+                            Comenzar
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <h3>Plan Startup</h3>
+                    <div class="product-price">$19 CAD/mes<br><small>$190 CAD/año</small></div>
+                    <ul class="product-features">
+                        <li>Escaneo automático de vulnerabilidades</li>
+                        <li>Gestión de contraseñas con 2FA</li>
+                        <li>Firewall inteligente</li>
+                        <li>Alertas y reportes en tiempo real</li>
+                        <li>Copia de seguridad en la nube encriptada</li>
+                    </ul>
+                    <div class="paypal-button-container">
+                        <button class="paypal-button" onclick="handlePayPalPayment('startup')">
                             <i class="fab fa-paypal"></i>
                             Pagar con PayPal
                         </button>
@@ -112,33 +128,48 @@
                 </div>
                 <div class="product-card featured">
                     <div class="featured-badge">Más Popular</div>
-                    <h3>Desarrollo de Aplicación Web</h3>
-                    <div class="product-price">$8,500</div>
+                    <h3>Plan PYME</h3>
+                    <div class="product-price">$49 CAD/mes<br><small>$490 CAD/año</small></div>
                     <ul class="product-features">
-                        <li>Aplicación web personalizada</li>
-                        <li>Diseño responsive</li>
-                        <li>Base de datos incluida</li>
-                        <li>Hosting por 1 año</li>
-                        <li>Mantenimiento 6 meses</li>
+                        <li>Todas las características de Startup</li>
+                        <li>Análisis avanzado con ML</li>
+                        <li>Cumplimiento de políticas (GDPR, HIPAA)</li>
+                        <li>Integraciones de plataforma</li>
                     </ul>
                     <div class="paypal-button-container">
-                        <button class="paypal-button" onclick="handlePayPalPayment('webapp')">
+                        <button class="paypal-button" onclick="handlePayPalPayment('sme')">
                             <i class="fab fa-paypal"></i>
                             Pagar con PayPal
                         </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <h3>Configuración de Red Segura</h3>
-                    <div class="product-price">$4,200</div>
+                    <h3>Empresa Mediana</h3>
+                    <div class="product-price">$129 CAD/mes<br><small>$1,290 CAD/año</small></div>
                     <ul class="product-features">
-                        <li>Configuración de firewall</li>
-                        <li>VPN empresarial</li>
-                        <li>Monitoreo 24/7</li>
-                        <li>Capacitación del personal</li>
+                        <li>Todas las características de PYME</li>
+                        <li>Panel multi-usuario</li>
+                        <li>Soporte prioritario</li>
+                        <li>Integraciones personalizadas</li>
                     </ul>
                     <div class="paypal-button-container">
-                        <button class="paypal-button" onclick="handlePayPalPayment('network')">
+                        <button class="paypal-button" onclick="handlePayPalPayment('enterprise')">
+                            <i class="fab fa-paypal"></i>
+                            Pagar con PayPal
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <h3>Servicios de Consultoría</h3>
+                    <div class="product-price">$500 - $10,000 CAD</div>
+                    <ul class="product-features">
+                        <li>Respuesta a incidentes automatizada</li>
+                        <li>Análisis avanzado con ML</li>
+                        <li>Cumplimiento de políticas</li>
+                        <li>Integraciones personalizadas</li>
+                    </ul>
+                    <div class="paypal-button-container">
+                        <button class="paypal-button" onclick="handlePayPalPayment('consulting')">
                             <i class="fab fa-paypal"></i>
                             Pagar con PayPal
                         </button>
@@ -148,7 +179,7 @@
         </div>
     </section>
 
-     Why Us Section 
+     <!--Why Us Section--> 
     <section id="nosotros" class="why-us">
         <div class="container">
             <h2 class="section-title">¿Por qué nosotros?</h2>
@@ -178,7 +209,7 @@
         </div>
     </section>
 
-     Contact Section 
+     <!--Contact Section--> 
     <section id="contacto" class="contact">
         <div class="container">
             <h2 class="section-title">Contactanos</h2>
@@ -214,7 +245,7 @@
         </div>
     </section>
 
-     Footer 
+     <!--Footer-->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
