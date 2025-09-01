@@ -669,6 +669,7 @@ body {
 
 @media (max-width: 480px) {
   .hero-title {
+    margin-top: 45px;
     font-size: 2rem;
   }
 
